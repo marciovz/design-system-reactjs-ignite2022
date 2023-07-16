@@ -9,6 +9,13 @@ export default {
     src: 'https://github.com/marciovz.png',
     alt: 'Marcio V Zimmermann',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}
