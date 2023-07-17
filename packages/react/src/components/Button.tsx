@@ -23,6 +23,10 @@ export const Button = styled('button', {
     cursor: 'not-allowed',
   },
 
+  '&:focus': {
+    boxshadow: '0 0 0 2px $color$gray100',
+  },
+
   svg: {
     width: '$4',
     height: '$4',
