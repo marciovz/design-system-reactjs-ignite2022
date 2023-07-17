@@ -17,5 +17,13 @@ const config = {
   docs: {
     autodocs: "tag",
   },
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/design-system-reactjs-ignite2022/'
+    }
+    
+    return config
+  }
+
 };
 export default config;
